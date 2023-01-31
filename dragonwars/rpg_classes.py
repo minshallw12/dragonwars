@@ -1,4 +1,5 @@
 class Weapon:
+    '''Creates a new weapon'''
     def __init__(self, name, attack):
         self._name = name
         self._attack = attack
@@ -8,6 +9,7 @@ class Weapon:
         return self._attack
 
 class Armor:
+    '''Creates a new armor'''
     def __init__(self, name, defense):
         self._name = name
         self._defense = defense
@@ -17,6 +19,7 @@ class Armor:
         return self._defense
 
 class Item:
+    '''Creates a new item'''
     def __init__(self, name, value):
         self._name = name
         self._value = value
@@ -39,6 +42,7 @@ bread = Item("Bread", 10)
 #-------------------------------------------------------------------------------------------------------------
 
 class CreateClass:
+    '''Creates a new character class with differen attributes'''
     def __init__(self, name, health, attack, defense, weapon={}, armor={}):
         self._name = name
         self._health = health
@@ -80,6 +84,7 @@ archer = CreateClass("Archer", 100, 7, 2)
 #---------------------------------------------------------------------------------------------------------------------------
 
 class Character:
+    '''Creates a new character after choosing its class'''
     def __init__(self, name, character_class):
         self._name = name
         self._class = character_class
